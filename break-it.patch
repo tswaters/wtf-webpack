@@ -1,0 +1,63 @@
+diff --git a/module1/component1.jsx b/module1/component1.jsx
+index a813c78..dc2038b 100644
+--- a/module1/component1.jsx
++++ b/module1/component1.jsx
+@@ -1,12 +1,12 @@
+ 
+ import React, { useCallback } from 'react'
+-//import { useSelector, useDispatch, connect } from 'react-redux';
++import { useSelector, useDispatch, connect } from 'react-redux';
+ 
+ console.log('Component1')
+ 
+-const connect = () => {}
+-const useSelector = () => {}
+-const useDispatch = () => {}
++// const connect = () => {}
++// const useSelector = () => {}
++// const useDispatch = () => {}
+ 
+ import { incrementCount, decrementCount, getCount } from './store1'
+ import { name, version } from './module1'
+diff --git a/module2/component2.jsx b/module2/component2.jsx
+index b6738c7..4b82bda 100644
+--- a/module2/component2.jsx
++++ b/module2/component2.jsx
+@@ -1,12 +1,12 @@
+ 
+ import React, { useCallback } from 'react'
+-// import { useSelector, useDispatch, connect } from 'react-redux';
++import { useSelector, useDispatch, connect } from 'react-redux';
+ 
+ console.log('Component2')
+ 
+-const connect = () => {}
+-const useSelector = () => {}
+-const useDispatch = () => {}
++// const connect = () => {}
++// const useSelector = () => {}
++// const useDispatch = () => {}
+ 
+ import { incrementCount, decrementCount, getCount } from './store2'
+ import { name, version } from './module2'
+diff --git a/module3/component3.jsx b/module3/component3.jsx
+index ab398c6..ccc661d 100644
+--- a/module3/component3.jsx
++++ b/module3/component3.jsx
+@@ -1,12 +1,12 @@
+ 
+ import React, { useCallback } from 'react'
+-// import { useSelector, useDispatch, connect } from 'react-redux';
++import { useSelector, useDispatch, connect } from 'react-redux';
+ 
+ console.log('Component3')
+ 
+-const connect = () => {}
+-const useSelector = () => {}
+-const useDispatch = () => {}
++// const connect = () => {}
++// const useSelector = () => {}
++// const useDispatch = () => {}
+ 
+ import { incrementCount, decrementCount, getCount } from './store3'
+ import { name, version } from './module3'
