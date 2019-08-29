@@ -7,23 +7,28 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = (env, argv) => ({
   entry: {
-    main: './main.tsx',
-    module1: './module1/module1.tsx',
-    module2: './module2/module2.tsx',
-    module3: './module3/module3.tsx',
+    main: './main.jsx',
+    module1: './module1/module1.jsx',
+    module2: './module2/module2.jsx',
+    module3: './module3/module3.jsx',
   },
   devtool: argv.mode === 'production' ? 'none' : 'inline-source-map',
   module: {
     rules: [
       {
-        test: /\.tsx?$/,
+        test: /\.jsx?$/,
         exclude: /node_modules/,
-        use: 'ts-loader'
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env', '@babel/preset-react']
+          }
+        }
       },
     ],
   },
   resolve: {
-    extensions: ['.tsx', '.ts', '.js'],
+    extensions: ['.jsx', '.js'],
   },
   plugins: [
     new HtmlWebpackPlugin({

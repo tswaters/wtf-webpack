@@ -1,16 +1,15 @@
-
-import React, { FC } from 'react'
+import React from 'react'
 import { render } from 'react-dom'
 import { Provider } from 'react-redux'
-import {useModuleInjection} from './module-injection'
-import { BrowserRouter as Router } from 'react-router-dom';
-import configStore from './store';
+import { useModuleInjection } from './module-injection'
+import { BrowserRouter as Router } from 'react-router-dom'
+import configStore from './store'
 
 console.log('App')
 
 const store = configStore()
 
-const App: FC = () => {
+const App = () => {
     const items = useModuleInjection()
     
     const menus = items.reduce(

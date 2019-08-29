@@ -1,17 +1,17 @@
 
-import React, { FC, useCallback } from 'react'
-import { connect, useSelector, useDispatch } from 'react-redux'
+import React, { useCallback } from 'react'
+// import { useSelector, useDispatch, connect } from 'react-redux';
 
 console.log('component3')
 
-// const connect = ():any => {}
-// const useSelector = (x:any) => {}
-// const useDispatch = ():any => {}
+const connect = () => {}
+const useSelector = () => {}
+const useDispatch = () => {}
 
 import { incrementCount, decrementCount, getCount } from './store3'
-import { name, longName, version } from './module3'
+import { name, version } from './module3'
 
-const Component: FC = () => {
+const Component = () => {
   
     const dispatch = useDispatch()
     const increment = useCallback(() => dispatch(incrementCount()), [dispatch])
@@ -21,8 +21,7 @@ const Component: FC = () => {
     return (
         <div>
             <h2>{name}</h2>
-            <p>{longName}</p>
-            How many widgets we&apos;ve sold: {count}
+            What is the current count: {count}
             <button onClick={increment}>Increase</button>
             <button onClick={decrement}>Decrease</button>
             <br /> version: {version}
