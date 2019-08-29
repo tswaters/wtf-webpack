@@ -2,7 +2,7 @@
 import React, { useCallback } from 'react'
 // import { useSelector, useDispatch, connect } from 'react-redux';
 
-console.log('component2')
+console.log('Component2')
 
 const connect = () => {}
 const useSelector = () => {}
