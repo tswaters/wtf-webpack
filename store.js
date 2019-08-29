@@ -5,7 +5,7 @@ console.log('store.ts')
 export default function configStore(state) {
   return createStore(
     combineReducers({
-      dummy: state => state
+      dummy: (_state = null) => _state
     }),
     state && state
   )
