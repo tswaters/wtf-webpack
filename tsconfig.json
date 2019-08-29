@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+      "moduleResolution": "node",
+      "allowSyntheticDefaultImports": true,
+      "outDir": "./dist/",
+      "sourceMap": true,
+      "noImplicitAny": true,
+      "strictNullChecks": true,
+      "module": "esNext",
+      "target": "es5",
+      "jsx": "react",
+      "allowJs": true
+    }
+  }
+  
